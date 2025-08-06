@@ -10,6 +10,24 @@
     margin-bottom: 40px;
     position: relative;
   }
+  .certification-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #b55fc3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .certification-button:hover {
+    background-color: #a048b0;
+    transform: translateY(-2px);
+  }
   
   .section-title::after {
     content: '';

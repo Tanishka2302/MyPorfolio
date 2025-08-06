@@ -23,6 +23,10 @@ const skills = [
 ];
 
 const Skills = () => {
+  const handleRedirect = () => {
+    window.open('https://drive.google.com/drive/folders/13z_DTjrJj1nogSDak93cCHDMd9lR8qxd?usp=drive_link', '_blank');
+  };
+
   return (
     <section id="skills" className="skills-section">
       <h2 className="section-title">My Skills</h2>
@@ -33,6 +37,13 @@ const Skills = () => {
             <span>{skill.name}</span>
           </div>
         ))}
+      </div>
+
+      {/* Button to redirect */}
+      <div className="certification-button-container">
+        <button className="certification-button" onClick={handleRedirect}>
+          View Certifications
+        </button>
       </div>
     </section>
   );

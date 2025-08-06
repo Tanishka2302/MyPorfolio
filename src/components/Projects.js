@@ -5,7 +5,8 @@ import deepfakeImg from '../assets/deepfakeImg.png'; // Example (add your images
 import ecommerceImg from '../assets/ecommerceImg.png';
 import mazeImg from '../assets/mazeImg.png';
 import buspassImg from '../assets/buspassImg.png';
-
+import linkliteImg from '../assets/linkliteImg.png';
+import todoImg from '../assets/todoImg.png';
 const Projects = () => {
   const projects = [
     {
@@ -44,6 +45,25 @@ const Projects = () => {
       technologies: ['JSP', 'HTML', 'CSS', 'MySQL', 'JavaScript'],
       github: 'https://github.com/Tanishka2302/Bus-Pass-Generator',
     },
+    {
+      id: 4,
+      title: 'LinkLite',
+      description:
+        'A mini LinkedIn clone with user authentication, profile management, and post sharing using a full stack setup.',
+      image: linkliteImg, // Replace with actual imported image reference
+      technologies: ['React', 'Node.js', 'Express', 'PostgreSQL'],
+      github: 'https://github.com/Tanishka2302/LinkLite', // Replace with your actual repo link
+    },
+    {
+      id: 5,
+      title: 'ToDo App',
+      description:
+        'A simple full stack task manager that allows users to add, view, edit, and delete tasks. Built using React for the frontend and Node.js with PostgreSQL for the backend.',
+      image: todoImg, // Replace with actual imported image reference
+      technologies: ['React', 'Node.js', 'Express', 'PostgreSQL'],
+      github: 'https://github.com/Tanishka2302/todo-app',
+    }
+    
   ];
 
   return (
