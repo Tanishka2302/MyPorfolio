@@ -54,7 +54,7 @@ const Projects = () => {
       image: linkliteImg,
       technologies: ['React', 'Node.js', 'Express', 'PostgreSQL'],
       github: 'https://github.com/Tanishka2302/LinkLite',
-      live: 'https://myporfolio-ip6u.onrender.com', // <-- Live demo URL added
+      live: 'https://linklite-frontend.onrender.com', // <-- Live demo URL added
     },
     {
       id: 6,
