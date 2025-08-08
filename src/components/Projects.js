@@ -1,12 +1,13 @@
 import React from 'react';
-import './css-files/project.css'; // Make sure this file exists
+import './css-files/project.css'; // Ensure this file exists
 
-import deepfakeImg from '../assets/deepfakeImg.png'; // Example (add your images!)
+import deepfakeImg from '../assets/deepfakeImg.png';
 import ecommerceImg from '../assets/ecommerceImg.png';
 import mazeImg from '../assets/mazeImg.png';
 import buspassImg from '../assets/buspassImg.png';
 import linkliteImg from '../assets/linkliteImg.png';
 import todoImg from '../assets/todoImg.png';
+
 const Projects = () => {
   const projects = [
     {
@@ -24,7 +25,7 @@ const Projects = () => {
       description:
         'Full-stack e-commerce platform with user and admin roles, product management, and authentication.',
       image: ecommerceImg,
-      technologies: ['HTML', 'CSS', 'JavaScript','NodeJS'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'NodeJS'],
       github: 'https://github.com/Tanishka2302/ecommerce_website',
     },
     {
@@ -46,24 +47,24 @@ const Projects = () => {
       github: 'https://github.com/Tanishka2302/Bus-Pass-Generator',
     },
     {
-      id: 4,
+      id: 5,
       title: 'LinkLite',
       description:
         'A mini LinkedIn clone with user authentication, profile management, and post sharing using a full stack setup.',
-      image: linkliteImg, // Replace with actual imported image reference
+      image: linkliteImg,
       technologies: ['React', 'Node.js', 'Express', 'PostgreSQL'],
-      github: 'https://github.com/Tanishka2302/LinkLite', // Replace with your actual repo link
+      github: 'https://github.com/Tanishka2302/LinkLite',
+      live: 'https://myporfolio-ip6u.onrender.com', // <-- Live demo URL added
     },
     {
-      id: 5,
+      id: 6,
       title: 'ToDo App',
       description:
         'A simple full stack task manager that allows users to add, view, edit, and delete tasks. Built using React for the frontend and Node.js with PostgreSQL for the backend.',
-      image: todoImg, // Replace with actual imported image reference
+      image: todoImg,
       technologies: ['React', 'Node.js', 'Express', 'PostgreSQL'],
       github: 'https://github.com/Tanishka2302/todo-app',
-    }
-    
+    },
   ];
 
   return (
@@ -93,6 +94,16 @@ const Projects = () => {
                   >
                     GitHub
                   </a>
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
