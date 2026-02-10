@@ -1,0 +1,1 @@
+ofstream fout(getenv("OUTPUT_PATH")

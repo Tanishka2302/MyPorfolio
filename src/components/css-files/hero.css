@@ -1,32 +1,31 @@
 /* Plain CSS if you're not using Tailwind's apply */
 .nav-btn {
-    padding: 0.75rem 1.5rem;
-    border-radius: 9999px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .nav-btn-primary {
-    background-color: #A173A0;
-    color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-btn-primary:hover {
-    background-color: #8e5b8f;
-  }
-  
-  .nav-btn-outline {
-    border: 2px solid #A173A0;
-    color: #A173A0;
-    background-color: transparent;
-  }
-  
-  .nav-btn-outline:hover {
-    background-color: #A173A0;
-    color: white;
-  }
-  
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-btn-primary {
+  background-color: #A173A0;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn-primary:hover {
+  background-color: #8e5b8f;
+}
+
+.nav-btn-outline {
+  border: 2px solid #A173A0;
+  color: #A173A0;
+  background-color: transparent;
+}
+
+.nav-btn-outline:hover {
+  background-color: #A173A0;
+  color: white;
+}

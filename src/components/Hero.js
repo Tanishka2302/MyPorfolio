@@ -1,33 +1,3 @@
-/*import React from 'react';
-import { Link } from 'react-scroll';
-import profileImage from '../assets/profile.jpg';
-
-const Hero = () => {
-  return (
-    <section id="home" className="hero">
-      <div className="container">
-        <div className="hero-content">
-          <h1>Hi, I'm <span className="highlight">TanishkaPandarpatte</span></h1>
-          <p>Frontend Developer & UI/UX Designer</p>
-          <p>I create beautiful, responsive websites that provide exceptional user experiences</p>
-          <div className="hero-buttons">
-            <Link to="projects" className="btn" smooth={true} duration={500}>
-              View My Work
-            </Link>
-            <Link to="contact" className="btn btn-outline" smooth={true} duration={500}>
-              Contact Me
-            </Link>
-          </div>
-        </div>
-        <div className="hero-image">
-          <img src={profileImage} alt="Alex Johnson" />
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Hero;*/
 import React from 'react';
 import { Link } from 'react-scroll';
 import './css-files/hero.css';

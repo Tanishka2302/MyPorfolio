@@ -7,19 +7,18 @@ const skills = [
   { name: 'JavaScript', icon: 'fab fa-js' },
   { name: 'React', icon: 'fab fa-react' },
   { name: 'Node.js', icon: 'fab fa-node-js' },
-  { name: 'EJS', icon: 'fab fa-figma' },
+  { name: 'Express', icon: 'fab fa-figma' },
   { name: 'TypeScript', icon: 'fab fa-figma' },
   { name: 'Bootstrap', icon: 'fab fa-bootstrap' },
   { name: 'Postgress SQL', icon: 'fas fa-database' },
   { name: 'MySQL', icon: 'fab fa-figma' },
-  { name: 'PyCharam', icon: 'fas fa-fire' },
-  { name: 'Eclipse', icon: 'fab fa-figma' },
   { name: 'Git', icon: 'fab fa-git-alt' },
   { name: 'GitHub', icon: 'fab fa-figma' },
   { name: 'Python', icon: 'fab fa-figma' },
   { name: 'Java', icon: 'fab fa-figma' },
   { name: 'C/C++', icon: 'fab fa-figma' },
   { name: 'Tailwind CSS', icon: 'fab fa-figma' },
+  { name: 'MongoDB', icon: 'fab fa-figma' },
 ];
 
 const Skills = () => {

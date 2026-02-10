@@ -16,11 +16,11 @@ const About = () => {
     <div>
       <strong>Email:</strong>
       <a 
-        href="https://mail.google.com/mail/?view=cm&fs=1&to=tanishkapandharpatte@gmail.com" 
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=pandharpattetanishka@gmail.com" 
         target="_blank" 
         rel="noopener noreferrer"
       >
-        tanishkapandharpatte@gmail.com
+        pandharpattetanishka@gmail.com
       </a>
     </div>
     <div><strong>Location:</strong> Pune, India</div>
@@ -29,7 +29,7 @@ const About = () => {
     {/* Resume Button */}
     <div style={{ marginTop: '10px' }}>
       <a 
-        href="https://drive.google.com/file/d/1-sIBkw6pY238JWb8NlhgzWCLRLzyssFY/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1whbexZHljIuFUgmTu2bCNRScVf2n8qfn/view?usp=drive_link" 
         target="_blank" 
         rel="noopener noreferrer"
         className="resume-button"

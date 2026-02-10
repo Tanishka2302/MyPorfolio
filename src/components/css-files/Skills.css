@@ -1,74 +1,91 @@
 .skills-section {
-    padding: 60px 20px;
-    background-color: #fceefc; /* Soft pink background */
-    text-align: center;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-    color: #b85bb4;
-    margin-bottom: 40px;
-    position: relative;
-  }
-  .certification-button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 10px 20px;
-    background-color: #b55fc3;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .certification-button:hover {
-    background-color: #a048b0;
-    transform: translateY(-2px);
-  }
-  
-  .section-title::after {
-    content: '';
-    width: 60px;
-    height: 4px;
-    background: #4fb7ff;
-    display: block;
-    margin: 8px auto 0;
-    border-radius: 2px;
-  }
-  
-  .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-  }
-  
-  .skill-card {
-    background-color: #ffffff;
-    color: #333;
-    width: 140px;
-    height: 120px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-weight: 600;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .skill-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .skill-icon {
-    font-size: 2rem;
-    color: #4fb7ff;
-    margin-bottom: 10px;
-  }
-  
+  padding: 80px 40px;
+  background-color: #fceefc;
+  text-align: center;
+}
+
+/* Title */
+
+.section-title {
+  font-size: 2.5rem;
+  color: #b85bb4;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #4fb7ff;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* 🔥 Responsive grid magic */
+
+.skills-grid {
+  display: grid;
+  gap: 30px;
+
+  /* THIS line makes cards stretch across screen */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Cards */
+
+.skill-card {
+  background-color: #ffffff;
+  color: #333;
+  height: 140px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+  font-weight: 600;
+  font-size: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  color: #4fb7ff;
+  margin-bottom: 10px;
+}
+
+/* Button */
+
+.certification-button-container {
+  margin-top: 40px;
+}
+
+.certification-button {
+  padding: 12px 24px;
+  background-color: #b55fc3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.certification-button:hover {
+  background-color: #a048b0;
+  transform: translateY(-2px);
+}
