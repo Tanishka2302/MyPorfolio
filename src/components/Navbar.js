@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import TLogo from '../assets/T.png';
  // Assuming your CSS file is named like this
+import "./css-files/navbar.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);

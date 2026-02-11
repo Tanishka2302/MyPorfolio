@@ -1,31 +1,177 @@
-/* Plain CSS if you're not using Tailwind's apply */
+/* HERO SIZE (compact) */
+
+.hero-section {
+  margin-top: 90px;
+  position: relative;
+  padding: 40px 40px 20px;
+  background: linear-gradient(135deg,#f4e7ff,#fdf4ff,#f9f4f2);
+}
+
+/* layout */
+
+.hero-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  min-height: 280px;
+}
+
+/* TEXT */
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.hero-content span {
+  color: #A173A0;
+}
+
+.hero-role {
+  font-size: 1.4rem;
+  margin-top: 14px;
+  font-weight: 600;
+  color: #555;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  margin-top: 14px;
+  color: #666;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+  margin-top: 22px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
 .nav-btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  display: inline-block;
-  text-align: center;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s ease;
 }
 
 .nav-btn-primary {
-  background-color: #A173A0;
+  background: #A173A0;
   color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.nav-btn-primary:hover {
-  background-color: #8e5b8f;
 }
 
 .nav-btn-outline {
   border: 2px solid #A173A0;
   color: #A173A0;
-  background-color: transparent;
 }
 
-.nav-btn-outline:hover {
-  background-color: #A173A0;
-  color: white;
+.nav-btn-outline:hover,
+.nav-btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* VISUAL CARD */
+
+.visual-card {
+  width: 100%;
+  max-width: 380px;
+  height: 240px;
+  border-radius: 22px;
+  padding: 28px;
+  background: linear-gradient(135deg,#8b5cf6,#ec4899);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* fake lines */
+
+.line {
+  height: 10px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 10px;
+}
+
+.line.short { width: 70%; }
+.line.tiny { width: 40%; }
+
+/* floating tech badges */
+
+.floating-tags {
+  position: absolute;
+  right: 8%;
+  bottom: 28%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 220px;
+  z-index: 2;
+}
+
+.floating-tags span {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(8px);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #7c3aed;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  animation: floatTag 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatTag {
+  from { transform: translateY(0); }
+  to { transform: translateY(-12px); }
+}
+
+/* dotted overlay */
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#d8b4fe 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .visual-card {
+    margin: auto;
+  }
+
+  .floating-tags {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }

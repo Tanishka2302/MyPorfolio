@@ -2,50 +2,52 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import './css-files/hero.css';
 
-
-
 const Hero = () => {
   return (
-    <section id="home" className="bg-[#F9F4F2] min-h-screen flex items-center justify-center">
-      <div className="container mx-auto px-6 md:px-12 lg:px-20 text-center md:text-left space-y-6 max-w-3xl">
+    <section id="home" className="hero-section">
 
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
-          Hi, I'm <span className="text-[#A173A0]">Tanishka Pandarpatte</span>
-        </h1>
+      <div className="hero-grid">
 
-        <p className="text-xl text-gray-600 font-medium">
-        Full Stack Web Developer
-        </p>
+        {/* LEFT TEXT */}
+        <div className="hero-content">
+          <h1>
+            Hi, I'm <span>Tanishka Pandarpatte</span>
+          </h1>
 
-        <p className="text-md text-gray-500 max-w-xl">
-        From backend APIs to polished UIs, I love building projects that solve real problems and look good doing it.
-        </p>
+          <p className="hero-role">
+            Full Stack Web Developer
+          </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">
-        <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">
-        <div className="hero-buttons">
-  <Link
-    to="projects"
-    smooth={true}
-    duration={500}
-    className="nav-btn nav-btn-primary"
-  >
-    View My Work
-  </Link>
+          <p className="hero-desc">
+            From backend APIs to polished UIs, I love building projects
+            that solve real problems and look good doing it.
+          </p>
 
-  <Link
-    to="contact"
-    smooth={true}
-    duration={500}
-    className="nav-btn nav-btn-outline"
-  >
-    Let's Connect
-  </Link>
-</div>
-</div>
+          <div className="hero-buttons">
+            <Link to="projects" smooth duration={500} className="nav-btn nav-btn-primary">
+              View My Work
+            </Link>
 
-      
+            <Link to="contact" smooth duration={500} className="nav-btn nav-btn-outline">
+              Let's Connect
+            </Link>
+          </div>
         </div>
+
+        {/* RIGHT VISUAL */}
+        <div className="visual-card">
+          <div className="line"></div>
+          <div className="line short"></div>
+          <div className="line"></div>
+          <div className="line tiny"></div>
+        </div>
+        <div className="floating-tags">
+  <span>React</span>
+  <span>Node</span>
+  <span>JavaScript</span>
+  <span>CSS</span>
+  <span>MongoDB</span>
+</div>
 
       </div>
     </section>
