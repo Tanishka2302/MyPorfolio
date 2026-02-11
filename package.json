@@ -1,7 +1,6 @@
 {
   "name": "myportfolio",
-"homepage": ".",
-
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +8,7 @@
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "cra-template-pwa": "^2.0.0",
     "emailjs-com": "^3.2.0",
     "lottie-react": "^2.4.1",
     "react": "^19.1.1",
