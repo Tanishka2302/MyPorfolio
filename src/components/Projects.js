@@ -60,6 +60,9 @@ const Projects = () => {
       image: mazeImg,
       technologies: ['React', 'TypeScript', 'Tailwind CSS'],
       github: 'https://github.com/Tanishka2302/maze-solver1',
+      article: 'https://www.geeksforgeeks.org/connect/post/78690',
+      featured: true
+
     },
     {
       id: 6,
@@ -97,7 +100,12 @@ const Projects = () => {
         <div className="project-grid">
           {projects.map((project) => (
             <div className="project-card" key={project.id}>
-              <div className="project-image">
+               {project.featured && (
+                      <div className="gfg-badge">
+                        📘 Featured on GeeksforGeeks
+                      </div>
+                    )}
+                  <div className="project-image">
                 <img src={project.image} alt={project.title} />
               </div>
 
@@ -120,6 +128,16 @@ const Projects = () => {
                   >
                     GitHub
                   </a>
+                  {project.article && (
+                    <a
+                      href={project.article}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn"
+                    >
+                      Article
+                    </a>
+                  )}
 
                   {project.live && (
                     <a
