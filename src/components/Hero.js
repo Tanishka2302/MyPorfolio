@@ -11,7 +11,7 @@ const Hero = () => {
         {/* LEFT TEXT */}
         <div className="hero-content">
           <h1>
-            Hi, I'm <span>Tanishka Pandarpatte</span>
+            Hi, I'm <span>Tanishka Pandharpatte</span>
           </h1>
 
           <p className="hero-role">
