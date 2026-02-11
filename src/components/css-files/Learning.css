@@ -1,0 +1,86 @@
+.learning-section {
+  padding: 80px 40px;
+  background: #fdf4ff;
+  text-align: center;
+}
+
+.learning-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.learning-card {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+
+  transition: transform 0.25s ease;
+}
+
+.learning-card:hover {
+  transform: translateY(-6px);
+}
+
+.learning-card h3 {
+  font-size: 1.4rem;
+  color: #9333ea;
+  margin-bottom: 10px;
+}
+
+.learning-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .learning-section {
+    padding: 60px 20px;
+  }
+
+  .learning-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+  .learning-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .learning-card {
+    flex: 0 0 85%;
+    min-width: 85%;
+    scroll-snap-align: center;
+  }
+
+  .learning-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .learning-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* extra small phones */
+
+@media (max-width: 480px) {
+  .learning-card {
+    flex: 0 0 92%;
+    min-width: 92%;
+  }
+}

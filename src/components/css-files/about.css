@@ -100,9 +100,8 @@
   background-color: #a049a3;
   transform: translateY(-2px);
 }
-
 /* =========================
-   MOBILE RESPONSIVE FIX
+   ABOUT MOBILE RESPONSIVE
 ========================= */
 
 @media (max-width: 900px) {
@@ -127,10 +126,21 @@
     height: 200px;
   }
 
+  /* 👉 LEFT ALIGN CARD ONLY ON MOBILE */
+
   .info-cards {
     font-size: 0.95rem;
     padding: 1.2rem;
-    text-align: center;
+    text-align: left;
+  }
+
+  .info-cards p {
+    margin: 6px 0;
+  }
+
+  .info-cards strong {
+    display: inline;
+    font-weight: 600;
   }
 
   .about-right {

@@ -74,7 +74,30 @@
     font-size: 1.3rem;
   }
 
+  /* 🔥 hide role/email line on mobile */
   .footer-logo p {
-    font-size: 0.95rem;
+    display: none;
   }
+
+}
+/* ======================
+   CONTACT MOBILE CLEAN
+====================== */
+
+@media (max-width: 768px) {
+
+  /* hide contact info column */
+  .contact-info {
+    display: none;
+  }
+
+  /* make form full width */
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
 }
