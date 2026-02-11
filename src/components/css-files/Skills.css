@@ -23,15 +23,12 @@
   border-radius: 2px;
 }
 
-/* 🔥 Responsive grid magic */
+/* Desktop grid */
 
 .skills-grid {
   display: grid;
   gap: 30px;
-
-  /* THIS line makes cards stretch across screen */
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -81,11 +78,57 @@
   border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
-
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .certification-button:hover {
   background-color: #a048b0;
   transform: translateY(-2px);
+}
+
+/* =========================
+   MOBILE COMPACT GRID
+========================= */
+
+@media (max-width: 900px) {
+
+  .skills-section {
+    padding: 60px 16px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  /* 2 column tight grid */
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .skill-card {
+    height: 90px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+
+  .skill-icon {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+}
+
+/* Extra small phones */
+
+@media (max-width: 480px) {
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-card {
+    height: 80px;
+    font-size: 13px;
+  }
 }

@@ -6,6 +6,7 @@ const skills = [
   { name: 'CSS', icon: 'fab fa-css3-alt' },
   { name: 'JavaScript', icon: 'fab fa-js' },
   { name: 'React', icon: 'fab fa-react' },
+  { name: 'Nextjs', icon: 'fab fa-react' },
   { name: 'Node.js', icon: 'fab fa-node-js' },
   { name: 'Express', icon: 'fab fa-figma' },
   { name: 'TypeScript', icon: 'fab fa-figma' },
